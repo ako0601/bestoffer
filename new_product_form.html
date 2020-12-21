@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>베스트오퍼</title>
+        <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="myauction.css">
+        <meta name="viewport" content="width=device-width" initial-scale="1">
+    </head>
+    <body>
+        <div class="upper_authentication">
+            <a href="login.html">로그인</a>
+            <a href="#">회원가입</a>
+            <a href="#">고객센터</a>
+        </div>
+
+        <div class="banner_title">
+            <p>베스트오퍼</p>
+        </div>
+        
+        <div class="myinfo_cart">
+            <div class="search__container">
+                <input class="search__input" type="text" placeholder="검색어 입력">
+            </div>
+            <div class="infocart_contents">
+                <a href="#"><img src="images/user.png"></a>
+                <a href="#">내정보</a>
+            </div>
+            <div class="infocart_contents">
+                <a href="#"><img src="images/shopping-cart.png"></a>
+                <a href="#">장바구니</a>
+            </div>
+        </div>
+
+        <a href="#">
+            <div class="advertisement1">
+                <p>광고 들어갈 자리</p>
+            </div>
+        </a>
+
+        <div class="main_contents">
+            <div class="nav_list">
+                <ul>
+                    <li><a href="#">생물</a></li>
+                    <li><a href="#">예술품</a></li>
+                    <li><a href="#">_</a></li>
+                    <li><a href="#">_</a></li>
+                    <li><a href="#">_</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+
+            <div class="form_div">
+                <form action="/my-handling-form-page" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="product_images">제품사진:</label>
+                        <input type="file" class="form-control-file" id="product_images"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="product_name">제목:</label>
+                        <input type="text" id="product_name"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="product_condition">상태:</label>
+                        <input type="text" id="product_condition"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="categories">카테고리</label>
+                        <select class="form-control">
+                            <option>--카테고리(선택안함)--</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="bid_price">최초입찰가: </label>
+                        <input type="text" id="bid_price">
+                    </div>
+                    <div class="form-group">
+                        <label for="bid_ammount">최소 입찰 단위</label>
+                        <input type="range" class="form-control-range" id="bid_ammount">
+                    </div>
+                    <div class="form-group">
+                        <label for="bid_due">기한: </label>
+                        <input type="date" id="bid_due">
+                    </div>
+                    <div class="form-group">
+                        <p>배송비</p>
+                        <label class="form-check-input" for="delivery_fee1"><input type="radio" class="from-check-input" id="delivery_fee1" value="option1" name="delivery" checked>포함</label>
+                        <label class="form-check-input" for="delivery_fee2"><input type="radio" class="from-check-input" id="delivery_fee2" value="option2" name="delivery">미포함</label>
+                    </div>
+
+                    <div class="form-group">
+                        <p>반품 가능 여부</p>
+                        <label class="form-check-input" for="return_fee1"><input type="radio" class="from-check-input" id="return_fee1" value="option1" name="return" checked>가능</label>
+                        <label class="form-check-input" for="return_fee2"><input type="radio" class="from-check-input" id="return_fee2" value="option2" name="return">불가능</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product_description">제품설명:</label>
+                        <textarea id="msg"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                        <label class="custom-control-label" for="customSwitch1">전문가 감정 신청</label>
+                    </div>
+
+                    <div class="submit_button">
+                        <button type="submit" class="btn btn-primary">완료</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </body>
+</html>
