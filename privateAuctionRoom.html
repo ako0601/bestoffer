@@ -6,6 +6,7 @@
         <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
         <link rel="stylesheet" href="myauction.css">
         <meta name="viewport" content="width=device-width" initial-scale="1">
+        <script type="text/javascript" src="functions.js"></script>
     </head>
     <body>
         <div class="upper_authentication">
@@ -59,15 +60,35 @@
             </div>
 
             <div class="room_contents">
-                <div>
-                    <h2>____의 경매에 오신 것을 환영합니다!</h2>
+                <div class="product_contents">
+                    <div class="wellcom_to">
+                        <h2>____의 경매에 오신 것을 환영합니다!</h2>
+                    </div>
+                    <div class="product_name">
+                        <p>경매품목</p>
+                    </div>
+                    <div class="product_images_private">
+                        <img src="https://lh3.googleusercontent.com/proxy/kJQi2r8zbR6U9bJCXT1jTA8umpoaCc-oX38YSc1BAh4OXo-i2S3z8KdEqIptZwbuWypgy9tsrmWfnIXc8jlxbH-JJBOAobP5M240JoRm8JYJtaUqbRHHf_hCW_h9XzzDlUn8Z6v-KHrWnD9JRQWtwC58VIhINt3juTSt2qdw">
+                    </div>
+                    <div class="current_price">
+                        <h3>0원</h3>
+                    </div>
+                    <div class="product_explaination">
+                        <p>a sdlkj gfasl dfgksa ldf gk nas ldkfnlaskdfn lasd f knasldkf n asldkf nasldkfnas ldkfnas ldkfn asld kfnas ldfknas lkdfn</p>
+                    </div>
                 </div>
-                
-                <div>
-                    <p>경매품목</p>
-                </div>
-                <div>
-                    <img src="https://lh3.googleusercontent.com/proxy/kJQi2r8zbR6U9bJCXT1jTA8umpoaCc-oX38YSc1BAh4OXo-i2S3z8KdEqIptZwbuWypgy9tsrmWfnIXc8jlxbH-JJBOAobP5M240JoRm8JYJtaUqbRHHf_hCW_h9XzzDlUn8Z6v-KHrWnD9JRQWtwC58VIhINt3juTSt2qdw">
+                <script>
+                    function bid() {
+                        var target = document.getElementsByClassName("bid_button")
+                        var nextBid = 1000;
+                        var userID = 111;
+
+                        nextBid++1000;
+                        target.innerHTML = "<p>" + nextBid + "</p>";
+                    }
+                </script>
+                <div class="bid_button" onclick="bid();">
+                    <p>0원</p>
                 </div>
             </div>
         </div>

@@ -250,3 +250,39 @@ a {
 dl, dt, dd, ul, ol, menu, li {
     list-style: none;
 }
+
+
+/* 경매장 입실 */
+
+.room_contents {
+    margin: auto 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bid_button {
+    background-color: cornflowerblue;
+    min-width: 100px;
+    padding: auto;
+}
+
+.bid_button p {
+    text-align: center;
+}
+
+.current_price {
+}
+
+.product_contents {
+    background-color: crimson;
+    padding: 15px;
+}
+
+.product_images_private{
+    text-align: center;
+}
+
+.current_price h3{
+    text-align: right;
+    margin-right: 15px;
+}
