@@ -7,15 +7,16 @@
         <link rel="stylesheet" href="myauction.css">
         <meta name="viewport" content="width=device-width" initial-scale="1">
         <script type="text/javascript" src="functions.js"></script>
-        <script type="text/javascript">
+        <script>
+            var nextBid = 1000;
             function bid() {
-                var target = document.getElementsByClassName("bid_button");
-                var nextBid = 1000;
-                var userID = 111;
-                alert("입찰");
-
-                nextBid++1000;
-                target.innerHTML += "<p>" + nextBid + "</p>";
+                var target1 = document.getElementById("bid_button");
+                var target2 = document.getElementById("current_price");
+                var target3 = document.getElementById("chat");
+                var username = "옥스";
+                nextBid = nextBid + 1000;
+                target3.innerHTML += "<p><strong>" + username + "<stong> 님께서 " + nextBid + "원을 입찰하셨습니다.</p>";
+                target2.innerHTML = "<h3>" + nextBid + "<h3>";
             }
         </script>
     </head>
@@ -71,28 +72,35 @@
             </div>
 
             <div class="room_contents">
-                <div class="product_contents">
-                    <div class="wellcom_to">
-                        <h2>____의 경매에 오신 것을 환영합니다!</h2>
+                <div class="product_info">
+                    <div class="product_contents">
+                        <div class="wellcom_to">
+                            <h2>____의 경매에 오신 것을 환영합니다!</h2>
+                        </div>
+                        <div class="product_name">
+                            <p>경매품목</p>
+                        </div>
+                        <div class="product_images_private">
+                            <img src="data:image/jpeg;base64,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">
+                        </div>
+                        <div id="current_price">
+                            <h3>1000원</h3>
+                        </div>
+                        <div class="product_explaination">
+                            <p>a sdlkj gfasl dfgksa ldf gk nas ldkfnlaskdfn lasd f knasldkf n asldkf nasldkfnas ldkfnas ldkfn asld kfnas ldfknas lkdfn</p>
+                        </div>
                     </div>
-                    <div class="product_name">
-                        <p>경매품목</p>
-                    </div>
-                    <div class="product_images_private">
-                        <img src="data:image/jpeg;base64,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">
-                    </div>
-                    <div class="current_price">
-                        <h3>0원</h3>
-                    </div>
-                    <div class="product_explaination">
-                        <p>a sdlkj gfasl dfgksa ldf gk nas ldkfnlaskdfn lasd f knasldkf n asldkf nasldkfnas ldkfnas ldkfn asld kfnas ldfknas lkdfn</p>
+                    
+                    <div id="bid_button" onclick="bid()">
+                        <p>+1000원</p>
                     </div>
                 </div>
-                
-                <div class="bid_button" onclick="bid();">
-                    <p>+0원</p>
+                <div id="chat">
+                    <p>___의 경매에 오신 것을 환영합니다!</p>
+                    
                 </div>
             </div>
+            
         </div>
         <div class="footer">
             <p>연락처: 010-6337-9039</p>
