@@ -255,14 +255,16 @@ dl, dt, dd, ul, ol, menu, li {
 /* 경매장 입실 */
 
 .room_contents {
+    width: 100%;
     margin: auto 15px;
+    margin-top: 15px;
     display: flex;
     justify-content: space-around;
 }
 
 .bid_button {
     background-color: cornflowerblue;
-    min-width: 100px;
+    min-width: 20%;
     padding: auto;
 }
 
@@ -276,6 +278,7 @@ dl, dt, dd, ul, ol, menu, li {
 .product_contents {
     background-color: crimson;
     padding: 15px;
+    width: 100%;
 }
 
 .product_images_private{
@@ -285,4 +288,9 @@ dl, dt, dd, ul, ol, menu, li {
 .current_price h3{
     text-align: right;
     margin-right: 15px;
+}
+
+.footer {
+    width: 100%;
+    height: 250px;
 }
